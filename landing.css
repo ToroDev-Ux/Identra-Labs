@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+      /* overflow-x: hidden; */
+}
+
+.hero-sect {
+    padding-top: 500px;
+    height: 100vh;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+        url(./images/Gemini_Generated_Image_g9yrwg9yrwg9yrwg.png);
+    background-repeat: no-repeat;
+}
+
+.left-side {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 32px;
+    left: 130px;
+}
+
+.left-img {
+    width: 100px;
+    object-fit: contain;
+    height: 50px;
+}
+
+.left-txt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.left-txt h1 {
+    color: #f3ededb5;
+    font-size: 33px;
+    font-weight: 700;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.left-txt h2 {
+    color: #5f6d88;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    align-items: center;
+    font-weight: 400;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.right-side {
+    position: absolute;
+    top: 32px;
+    left: 910px;
+    right: 130px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.right-side h4 a {
+    font-size: 13px;
+    width: 500px;
+    font-weight: 500;
+    padding: 10px 10px;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    width: 90px;
+    font-family: ui-sans-serif, system-ui, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji",
+        "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.right-side h4 a:hover {
+    color: #f5eeee;
+    width: 90px;
+    height: 33px;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid rgba(96, 165, 250, 0.114);
+    background: rgba(96, 165, 250, 0);
+    transform: translateY(-1px);
+}
+
+.generate a {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 10px;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    font-family: ui-sans-serif, system-ui, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji",
+        "Segoe UI Symbol", "Noto Color Emoji";
+    width: 90px;
+    height: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid rgba(96, 165, 250, 0.31);
+    background: rgba(96, 165, 250, 0.08);
+}
+
+.generate a {
+    color: #5998F0;
+
+}
+
+.export a {
+    color: #6b7a99;
+
+}
+
+.history a {
+    color: #6b7a99;
+
+}
+
+
+
+body{
+    background: linear-gradient(135deg, #0f172a, #020617);
+    font-family: ui-sans-serif, system-ui, sans-serif;
+    margin: 0;
+}
+
+/* MAIN */
+.main-container{
+    padding: 60px 120px;
+}
+
+/* HERO */
+.hero-section{
+    margin-bottom: 60px;
+}
+
+.small-title{
+    color: #64748b;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.main-title{
+    font-size: 48px;
+    font-weight: 700;
+    color: #e5e7eb;
+}
+
+.main-title span{
+    background: linear-gradient(90deg, #60a5fa, #a78bfa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* BUTTON */
+.generate-btn{
+    margin-top: 25px;
+
+    padding: 14px 28px;
+    border-radius: 14px;
+
+    border: none;
+    cursor: pointer;
+
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+
+    background: linear-gradient(90deg, #60a5fa, #a78bfa);
+
+    transition: all 0.3s ease;
+}
+
+.generate-btn:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(96,165,250,0.25);
+}
+
+/* RESULT */
+.result-section{
+    margin-top: 40px;
+}
+
+/* EMPTY STATE */
+.empty-state{
+    text-align: center;
+    margin-top: 60px;
+}
+
+.icon-box{
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: auto;
+    margin-bottom: 20px;
+
+    background: rgba(255,255,255,0.05);
+    color: orange;
+    font-size: 30px;
+}
+
+.empty-state h2{
+    color: #e5e7eb;
+}
+
+.empty-state p{
+    color: #64748b;
+}
