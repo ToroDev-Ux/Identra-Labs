@@ -291,3 +291,235 @@ padding-left: 0px;
     font-weight: 500;
     /* margin-top: 5px; */
 }
+/* ================= MOBILE (TABLETS + PHONES) ================= */
+@media (max-width: 768px) {
+
+    body {
+        padding-top: 180px;
+        height: auto;
+        background-size: cover;
+        height: 190vh;
+        background-position: center;
+    }
+
+    /* LEFT SIDE */
+    .left-side {
+        top: 30px;
+        left: 20px;
+        gap: 8px;
+    }
+
+    .left-img {
+        width: 70px;
+        height: 40px;
+    }
+
+    .left-txt h1 {
+        font-size: 22px;
+    }
+
+    .left-txt h2 {
+        font-size: 14px;
+    }
+
+    /* RIGHT SIDE NAV */
+    .right-side {
+        left: 50%;
+        transform: translateX(-50%);
+        top: 110px;
+
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+
+        width: 90%;
+    }
+
+    .right-side h4 a,
+    .generate a {
+        width: auto;
+        padding: 8px 14px;
+        font-size: 13px;
+    }
+
+    /* MAIN CONTAINER */
+    .main-container {
+        left: 50%;
+        transform: translateX(-50%);
+        top: 200px;
+
+        padding: 30px 15px;
+        width: 90%;
+        max-width: 500px;
+    }
+
+    /* HERO */
+    .main-title {
+        font-size: 26px;
+        line-height: 1.4;
+    }
+
+    /* BUTTON */
+    .generate-btn {
+        width: 100%;
+        max-width: 280px;
+        margin: 20px auto 0;
+        padding: 12px 20px;
+        font-size: 15px;
+    }
+
+    /* EMPTY STATE */
+    .empty-state {
+        padding: 40px 20px;
+        width: 100%;
+    }
+
+    .empty-state p {
+        width: 100%;
+        font-size: 13px;
+    }
+
+    /* ================= USER CARD (IMPORTANT FIX) ================= */
+    .user-card {
+        width: 100%;
+        padding: 25px 15px;
+    }
+
+    .avatar {
+        width: 90px;
+    }
+
+    /* 🔥 MAKE GRID 1 COLUMN */
+    .info-grid {
+        grid-template-columns: 1fr;  /* KEY FIX */
+        gap: 15px;
+    }
+
+    .info-box.full {
+        grid-column: span 1; /* RESET */
+    }
+
+    .info-box {
+        padding: 12px 15px;
+    }
+}
+
+
+/* ================= SMALL PHONES ================= */
+@media (max-width: 480px) {
+
+    body {
+        padding-top: 150px;
+        height: 170vh;
+    }
+
+    .left-img {
+        width: 60px;
+    }
+
+    .left-txt h1 {
+        font-size: 18px;
+    }
+
+    .left-txt h2 {
+        font-size: 13px;
+    }
+
+    .right-side {
+        top: 90px;
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+
+    .right-side h4 a {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+
+    .main-container {
+        top: 180px;
+        width: 95%;
+    }
+
+    .main-title {
+        font-size: 22px;
+    }
+
+    .generate-btn {
+        font-size: 14px;
+        padding: 10px 14px;
+    }
+
+    .icon-box {
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+    }
+
+    .empty-state h2 {
+        font-size: 18px;
+    }
+
+    .empty-state p {
+        font-size: 12px;
+    }
+
+    /* USER CARD */
+    .user-card {
+        padding: 20px 12px;
+    }
+
+    .avatar {
+        width: 80px;
+    }
+
+    .info-box h4 {
+        font-size: 14px;
+    }
+}
+.hamburger{
+    display: none;
+    font-size: 26px;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+@media (max-width: 768px){
+
+    /* SHOW HAMBURGER */
+    .hamburger{
+        display: block;
+    }
+
+    /* HIDE NAV INITIALLY */
+    .right-side{
+        display: none;
+
+        position: absolute;
+        top: 80px;
+        right: 20px;
+
+        flex-direction: column;
+        gap: 10px;
+
+        background: #0f172a;
+        padding: 15px 20px;
+        border-radius: 10px;
+
+        border: 1px solid rgba(96,165,250,0.2);
+    }
+
+    /* WHEN ACTIVE (OPEN MENU) */
+    .right-side.active{
+        display: flex;
+    }
+
+    /* STYLE LINKS */
+    .right-side h4 a{
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+}
