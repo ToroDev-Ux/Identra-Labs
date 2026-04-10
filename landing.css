@@ -177,7 +177,7 @@ body{
 .generate-btn{
     margin-top: 31px;
     padding: 13px 49px;
-    margin-left: 180px;
+    margin-left: 150px;
     border-radius: 11px;
     text-align: center;
     border: none;
@@ -196,35 +196,43 @@ body{
 /* RESULT */
 .result-section{
     margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* EMPTY STATE */
 .empty-state{
     text-align: center;
-    margin-top: 60px;
+    margin-left: 138px;
+
 }
 
 .icon-box{
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     border-radius: 20px;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     margin: auto;
-    margin-bottom: 20px;
+        border: 1px solid rgba(96, 165, 250, 0.31);
 
+    margin-bottom: 10px;
     background: rgba(255,255,255,0.05);
     color: orange;
     font-size: 30px;
 }
 
 .empty-state h2{
+    font-size: 20px;
+    font-weight: 500;
     color: #e5e7eb;
 }
 
 .empty-state p{
-    color: #64748b;
+    font-size: 13px;
+    width: 270px;
+    font-weight: 500;
+    color: #637793;
 }
